@@ -2,7 +2,8 @@
 import axios from 'axios';
 import { FlaggedTransaction, FraudStats } from '../types';
 
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'https://fraud-detection-70qt.onrender.com/api';
+// const API_BASE_URL = 'http://localhost:8000/api';
 
 export const uploadTransactions = async (file: File) => {
     const formData = new FormData();
